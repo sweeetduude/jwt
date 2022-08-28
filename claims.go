@@ -12,5 +12,5 @@ type Claims interface {
 	GetNotBefore() *NumericDate
 	GetIssuer() string
 	GetAudience() ClaimStrings
-	Valid() bool
+	Valid() error
 }

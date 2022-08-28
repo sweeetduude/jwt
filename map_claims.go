@@ -33,6 +33,10 @@ func (m MapClaims) GetIssuer() string {
 	return m.ParseString("iss")
 }
 
+func (m MapClaims) Valid() error {
+	return nil
+}
+
 // ParseNumericDate tries to parse a key in the map claims type as a number
 // date. This will succeed, if the underlying type is either a [float64] or a
 // [json.Number]. Otherwise, nil will be returned.

@@ -56,3 +56,7 @@ func (c RegisteredClaims) GetAudience() ClaimStrings {
 func (c RegisteredClaims) GetIssuer() string {
 	return c.Issuer
 }
+
+func (c RegisteredClaims) Valid() error {
+	return nil
+}
